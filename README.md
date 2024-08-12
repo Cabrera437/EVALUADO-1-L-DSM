@@ -16,7 +16,6 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
   <tr align="center">
    <td>David Alejandro Menjivar</td>
    <td>Mario Steven Cabrera</td>
-
   </tr>
     <tr align="center">
     <td><br> :computer: :bulb:</td>
