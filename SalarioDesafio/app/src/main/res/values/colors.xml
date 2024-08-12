@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimario">#1222E1</color>
+    <color name="colorSecundario">#6D74CA</color>
+    <color name="colorTexto">#000000</color>
+    <color name="colorFondo">#CECDBF</color>
+    <color name="limpiar">#FFC300</color>
+    <color name="resul">#929187</color>
+</resources>
