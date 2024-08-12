@@ -3,11 +3,8 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
 
 > [!IMPORTANT]
 >  Ejercicios A desarollar
-<br>
 > App para calcular el primedio de un estudiante
-<br>
 > App para calcular los descuentos al salario de un empleado
-<br>
 > App de calculadora basica
 
 > <h2>:dart:Equipo de Desarollo </h2>
