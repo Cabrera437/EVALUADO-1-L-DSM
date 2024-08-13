@@ -7,7 +7,7 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
 > App para calcular los descuentos al salario de un empleado<br>
 > App de calculadora basica<br>
 
-> <h2>:dart:Equipo de Desarollo </h2>
+> <h2>:dart:Equipo de Desarrollo </h2>
 <div style={padding: 10px}>
   <table style={margin: 0 auto}>
   <tr align="center">
