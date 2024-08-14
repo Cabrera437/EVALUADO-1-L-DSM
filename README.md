@@ -33,5 +33,4 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
   </tr> 
 </table>
 
-<h2>:open_file_folder: Archivos importantes </h2>
 
