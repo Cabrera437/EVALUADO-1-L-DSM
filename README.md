@@ -1,7 +1,7 @@
 # Desafio-de-DSM-L 💻
 Bienvenido a nuestro repositorio del primer desafio practico DSM L
 
-> [!IMPORTANT]
+> [!IMPORTANTE]
 >  Ejercicios A desarollar
 > App para calcular el promedio de un estudiante<br>
 > App para calcular los descuentos al salario de un empleado<br>
