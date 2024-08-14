@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity() {
         var resultado = findViewById<TextView>(R.id.idPromedioFinal)
 
         btnCalcular.setOnClickListener {
-            var Estudiante = nombreEstudiante.text.toString()
+            var estudiante = nombreEstudiante.text.toString()
             var calificacion1 = nota1.text.toString().toFloatOrNull()
             var calificacion2 = nota2.text.toString().toFloatOrNull()
             var calificacion3 = nota3.text.toString().toFloatOrNull()
             var calificacion4 = nota4.text.toString().toFloatOrNull()
             var calificacion5 = nota5.text.toString().toFloatOrNull()
 
-            if (Estudiante.isEmpty()) {
+            if (estudiante.isEmpty()) {
                 Toast.makeText(this, "Por favor, ingresa el nombre del estudiante.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
@@ -37,75 +37,64 @@ class MainActivity : AppCompatActivity() {
             if (calificacion1 == null) {
                 Toast.makeText(this, "Por favor, ingresa la calificación 1.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion1 < 0) {
+            } else if (calificacion1 < 0) {
                 Toast.makeText(this, "La calificación 1 debe ser al menos 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion1 > 10) {
-                Toast.makeText(this, "La calificación 1 no puede ser mayor a 10.", Toast.LENGTH_LONG).show()
+            } else if (calificacion1 > 10) {
+                Toast.makeText(this, "La calificación 1 debe estar en el rango de 0 a 10.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
             if (calificacion2 == null) {
                 Toast.makeText(this, "Por favor, ingresa la calificación 2.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion2 < 0) {
+            } else if (calificacion2 < 0) {
                 Toast.makeText(this, "La calificación 2 debe ser al menos 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion2 > 10) {
-                Toast.makeText(this, "La calificación 2 no puede ser mayor a 10.", Toast.LENGTH_LONG).show()
+            } else if (calificacion2 > 10) {
+                Toast.makeText(this, "La calificación 2 debe estar en el rango de 0 a 10.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
             if (calificacion3 == null) {
                 Toast.makeText(this, "Por favor, ingresa la calificación 3.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion3 < 0) {
+            } else if (calificacion3 < 0) {
                 Toast.makeText(this, "La calificación 3 debe ser al menos 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion3 > 10) {
-                Toast.makeText(this, "La calificación 3 no puede ser mayor a 10.", Toast.LENGTH_LONG).show()
+            } else if (calificacion3 > 10) {
+                Toast.makeText(this, "La calificación 3 debe estar en el rango de 0 a 10.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
             if (calificacion4 == null) {
                 Toast.makeText(this, "Por favor, ingresa la calificación 4.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion4 < 0) {
+            } else if (calificacion4 < 0) {
                 Toast.makeText(this, "La calificación 4 debe ser al menos 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion4 > 10) {
-                Toast.makeText(this, "La calificación 4 no puede ser mayor a 10.", Toast.LENGTH_LONG).show()
+            } else if (calificacion4 > 10) {
+                Toast.makeText(this, "La calificación 4 debe estar en el rango de 0 a 10.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
             if (calificacion5 == null) {
                 Toast.makeText(this, "Por favor, ingresa la calificación 5.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion5 < 0) {
+            } else if (calificacion5 < 0) {
                 Toast.makeText(this, "La calificación 5 debe ser al menos 0.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
-            }
-            if (calificacion5 > 10) {
-                Toast.makeText(this, "La calificación 5 no puede ser mayor a 10.", Toast.LENGTH_LONG).show()
+            } else if (calificacion5 > 10) {
+                Toast.makeText(this, "La calificación 5 debe estar en el rango de 0 a 10.", Toast.LENGTH_LONG).show()
                 return@setOnClickListener
             }
 
-            var promedio = (calificacion1 * 0.15) + (calificacion2 * 0.15) + (calificacion3 * 0.20) + (calificacion4 * 0.25) + (calificacion5 * 0.25)
+            // Creamos la instancia a la clase CalcularPromedio
+            var calculo = CalcularPromedio(calificacion1, calificacion2, calificacion3, calificacion4, calificacion5)
+            var promedio = calculo.calcularPromedio()
+            var estado = calculo.determinarEstado(promedio, estudiante)
 
-            if (promedio >= 6.0) {
-                resultado.text = "El Estudiante $Estudiante  aprobó  con un promedio final de $promedio"
-            } else {
-                resultado.text = "El Estudiante $Estudiante  reprobó con un promedio final de $promedio"
-            }
+            resultado.text = estado
         }
     }
 }
