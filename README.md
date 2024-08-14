@@ -2,7 +2,7 @@
 Bienvenido a nuestro repositorio del primer desafio practico DSM L
 
 > [!IMPORTANT]
->  Ejercicios A desarollar
+>  Ejercicios A desarollar<br>
 > App para calcular el promedio de un estudiante<br>
 > App para calcular los descuentos al salario de un empleado<br>
 > App de calculadora basica<br>
@@ -33,5 +33,4 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
   </tr> 
 </table>
 
-<h2>:open_file_folder: Archivos importantes </h2>
 
