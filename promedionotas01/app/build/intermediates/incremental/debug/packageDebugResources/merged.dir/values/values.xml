@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul">#002AFF</color>
+    <color name="fondocolor">#B4D5BF</color>
+    <color name="negro">#141416</color>
+    <string name="app_name">promedionotas01</string>
+    <style name="Base.Theme.Promedionotas01" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.Promedionotas01" parent="Base.Theme.Promedionotas01"/>
+</resources>
