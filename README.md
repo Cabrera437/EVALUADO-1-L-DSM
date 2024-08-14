@@ -33,4 +33,9 @@ Bienvenido a nuestro repositorio del primer desafio practico DSM L
   </tr> 
 </table>
 
+<h2>:open_file_folder: Archivos importantes </h2>
+
+> [Video 📽](https://drive.google.com/file/d/1j7Xf5Sl1sQgnUkJ16GQaw2ddhcMjyXNO/view?usp=sharing)
+
+
 
